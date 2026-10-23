@@ -1,0 +1,1821 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>二戰史實編年史電影與影集檔案庫 | WWII Historical Film Dossier</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts: Noto Serif TC (典雅襯線) & JetBrains Mono (軍事檔案編號) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+TC:wght@400;600;700;900&family=Playfair+Display:ital,wght@0,600;0,800;1,400&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Noto Serif TC"', 'Georgia', 'serif'],
+            display: ['"Playfair Display"', '"Noto Serif TC"', 'serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            parchment: {
+              50: '#fdfbf7',
+              100: '#f8f4ec',
+              200: '#f0e8da',
+              300: '#e5d8c3',
+              400: '#d5c1a5',
+              500: '#bf9b30',
+            },
+            coffee: {
+              100: '#eee5dc',
+              200: '#d7c4b4',
+              400: '#ad8b73',
+              600: '#7a5c43',
+              700: '#5c4331',
+              800: '#423023',
+              900: '#2c2017',
+              950: '#1e150f',
+            },
+            vintage: {
+              gold: '#b8860b',
+              accentRed: '#8c2d19',
+              olive: '#556b2f',
+              stamp: '#782d1c',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #f7f3ec;
+      background-image: 
+        radial-gradient(#d5c1a5 0.75px, transparent 0.75px),
+        radial-gradient(#d5c1a5 0.75px, #f7f3ec 0.75px);
+      background-size: 30px 30px;
+      background-position: 0 0, 15px 15px;
+    }
+    
+    /* Vintage Paper Texture Overlay */
+    .paper-texture {
+      background: linear-gradient(135deg, rgba(255,255,255,0.45) 0%, rgba(240,232,218,0.3) 100%);
+    }
+
+    /* Custom Scrollbar in Warm Sepia */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f0e8da;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #ad8b73;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #7a5c43;
+    }
+
+    /* Retro Stamp Styling */
+    .retro-stamp {
+      box-shadow: 0 0 0 2px #782d1c, inset 0 0 0 1px #782d1c;
+      transform: rotate(-1.5deg);
+    }
+  </style>
+</head>
+<body class="text-coffee-900 min-h-screen font-serif antialiased selection:bg-coffee-200 selection:text-coffee-950">
+
+  <!-- Main Container -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-7">
+
+    <!-- Header Section: Vintage Military Film Dossier Header -->
+    <header class="border-2 border-coffee-700 bg-parchment-100 paper-texture rounded-xl p-6 sm:p-8 shadow-md relative overflow-hidden">
+      <!-- Decorative background stamp watermark -->
+      <div class="absolute -right-8 -bottom-10 text-coffee-200/50 text-[10rem] font-serif select-none pointer-events-none">
+        <i class="fa-solid fa-feather-pointed"></i>
+      </div>
+
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 relative z-10">
+        <div class="space-y-2">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded text-xs font-mono font-bold bg-coffee-800 text-parchment-100 tracking-wider uppercase">
+              <i class="fa-solid fa-stamp text-vintage-gold"></i>
+              ARCHIVE DOSSIER: WWII-HISTORIA
+            </span>
+            <span class="px-2.5 py-0.5 text-xs font-mono bg-parchment-200 border border-coffee-400 text-coffee-700 rounded">
+              編年軸範圍：1937 — 1945
+            </span>
+            <span class="px-2.5 py-0.5 text-xs font-mono bg-vintage-olive/15 text-vintage-olive border border-vintage-olive/30 rounded font-semibold">
+              <i class="fa-solid fa-award"></i> 含完整得獎紀錄・導演・發行國
+            </span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold text-coffee-950 tracking-tight leading-tight">
+            二戰史實編年史電影與影集檔案庫
+          </h1>
+          <p class="text-sm sm:text-base text-coffee-700 max-w-3xl leading-relaxed">
+            依據歷史作戰時間排序，收錄 1937 淞滬、1939 閃擊波蘭、不列顛空戰、史達林格勒、諾曼第登陸至 1945 柏林覆滅與曼哈頓計畫。深入標註執導導演、出品國家與國際大獎榮譽。
+          </p>
+        </div>
+
+        <!-- Personal Watchlist Progress Dashboard -->
+        <div class="bg-parchment-50 border-2 border-coffee-600 rounded-lg p-4 shadow-sm w-full lg:w-80 shrink-0">
+          <div class="flex items-center justify-between border-b border-coffee-200 pb-2 mb-3">
+            <span class="font-mono text-xs uppercase tracking-wider text-coffee-800 font-bold flex items-center gap-1.5">
+              <i class="fa-solid fa-bullseye text-vintage-stamp"></i>
+              觀影偵察戰況
+            </span>
+            <span id="trackerPercent" class="text-xs font-mono font-bold text-coffee-900 bg-parchment-200 px-2 py-0.5 rounded">0%</span>
+          </div>
+
+          <div class="w-full bg-parchment-200 rounded-full h-2.5 overflow-hidden border border-coffee-300 mb-3">
+            <div id="trackerProgressBar" class="bg-gradient-to-r from-coffee-600 to-vintage-gold h-full w-0 transition-all duration-500"></div>
+          </div>
+
+          <div class="grid grid-cols-3 gap-1 text-center font-mono text-xs text-coffee-800">
+            <div class="bg-parchment-200/60 p-1.5 rounded">
+              <div class="text-[10px] text-coffee-600">已閱</div>
+              <div class="font-bold text-coffee-950"><span id="watchedCount">0</span> / <span id="totalMediaCount">0</span></div>
+            </div>
+            <div class="bg-parchment-200/60 p-1.5 rounded">
+              <div class="text-[10px] text-coffee-600">想看</div>
+              <div id="wishlistCount" class="font-bold text-vintage-gold">0</div>
+            </div>
+            <div class="bg-parchment-200/60 p-1.5 rounded">
+              <div class="text-[10px] text-coffee-600">典藏</div>
+              <div id="favCount" class="font-bold text-vintage-accentRed">0</div>
+            </div>
+          </div>
+
+          <div class="mt-3 pt-2 border-t border-coffee-200 flex gap-2">
+            <button id="exportBtn" class="w-full text-xs font-mono py-1.5 px-2 bg-coffee-800 hover:bg-coffee-900 text-parchment-100 rounded transition flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-file-invoice"></i> 匯出作戰備忘
+            </button>
+            <button id="resetProgressBtn" title="清空進度" class="text-xs font-mono px-2 bg-parchment-200 hover:bg-parchment-300 text-coffee-700 rounded transition border border-coffee-300">
+              <i class="fa-solid fa-arrow-rotate-left"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Toolbar: Search, Filters & View Toggle -->
+    <section class="bg-parchment-100 paper-texture border border-coffee-400 rounded-xl p-4 sm:p-5 shadow-sm space-y-4">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-3 items-center">
+        <!-- Search Input -->
+        <div class="md:col-span-4 relative">
+          <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-coffee-400 text-sm"></i>
+          <input 
+            type="text" 
+            id="searchInput" 
+            placeholder="搜尋戰役、導演、片名、國家或獎項 (如: 諾蘭, 諾曼第, 奧斯卡)..." 
+            class="w-full bg-parchment-50 border border-coffee-400 rounded-md pl-9 pr-8 py-2 text-xs sm:text-sm text-coffee-900 placeholder-coffee-400 focus:outline-none focus:border-coffee-700 focus:ring-1 focus:ring-coffee-700 shadow-inner"
+          >
+          <button id="clearSearch" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-coffee-500 hover:text-coffee-800 text-xs">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <!-- Theater Filter -->
+        <div class="md:col-span-2">
+          <select id="theaterFilter" class="w-full bg-parchment-50 border border-coffee-400 text-xs sm:text-sm rounded-md py-2 px-2.5 text-coffee-900 focus:outline-none focus:border-coffee-700">
+            <option value="ALL">🌐 全戰區 / 領域</option>
+            <option value="西歐與西線戰場">⚔️ 西歐與西線戰場</option>
+            <option value="東線蘇德戰場">❄️ 東線蘇德戰場</option>
+            <option value="太平洋與亞洲戰場">🌴 太平洋與亞洲戰場</option>
+            <option value="北非與地中海">🏜️ 北非與地中海</option>
+            <option value="大西洋海戰與潛艇">🌊 大西洋海戰與潛艇</option>
+            <option value="戰略空戰與航空隊">✈️ 戰略空戰與航空隊</option>
+            <option value="戰俘營與情報密戰">⛓️ 戰俘營與情報密戰</option>
+            <option value="決策後方與大審判">🏛️ 決策後方、核研與審判</option>
+          </select>
+        </div>
+
+        <!-- Country Filter -->
+        <div class="md:col-span-2">
+          <select id="countryFilter" class="w-full bg-parchment-50 border border-coffee-400 text-xs sm:text-sm rounded-md py-2 px-2.5 text-coffee-900 focus:outline-none focus:border-coffee-700">
+            <option value="ALL">🏳️ 全部發行國家</option>
+            <option value="美國">美國</option>
+            <option value="英國">英國</option>
+            <option value="德國">德國 (含西德)</option>
+            <option value="日本">日本</option>
+            <option value="蘇聯/俄羅斯">蘇聯 / 俄羅斯</option>
+            <option value="其他國家">其他 (荷蘭/芬蘭/挪威/義/捷/中/韓)</option>
+          </select>
+        </div>
+
+        <!-- Award Filter -->
+        <div class="md:col-span-2">
+          <select id="awardFilter" class="w-full bg-parchment-50 border border-coffee-400 text-xs sm:text-sm rounded-md py-2 px-2.5 text-coffee-900 focus:outline-none focus:border-coffee-700">
+            <option value="ALL">🏆 全部獲獎狀態</option>
+            <option value="OSCAR_WIN">🥇 榮獲奧斯卡金像獎</option>
+            <option value="MAJOR_WIN">🎖️ 榮獲國際/艾美大獎</option>
+            <option value="NOMINEE">📜 入圍奧斯卡或其他</option>
+          </select>
+        </div>
+
+        <!-- Format Filter -->
+        <div class="md:col-span-2">
+          <select id="typeFilter" class="w-full bg-parchment-50 border border-coffee-400 text-xs sm:text-sm rounded-md py-2 px-2.5 text-coffee-900 focus:outline-none focus:border-coffee-700">
+            <option value="ALL">🎞️ 形式：全部作品</option>
+            <option value="movie">🎬 院線長片</option>
+            <option value="series">📺 電視迷你影集</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Bottom View Switcher Bar -->
+      <div class="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-coffee-300">
+        <!-- View Buttons -->
+        <div class="inline-flex rounded-lg border border-coffee-400 p-1 bg-parchment-200/80">
+          <button id="viewTimelineBtn" class="px-3.5 py-1.5 rounded-md text-xs font-mono font-bold transition flex items-center gap-1.5 bg-coffee-800 text-parchment-50 shadow-sm">
+            <i class="fa-solid fa-timeline"></i>
+            <span>史實編年軸</span>
+          </button>
+          <button id="viewTheatersBtn" class="px-3.5 py-1.5 rounded-md text-xs font-mono font-bold transition flex items-center gap-1.5 text-coffee-800 hover:text-coffee-950">
+            <i class="fa-solid fa-map"></i>
+            <span>戰區矩陣板</span>
+          </button>
+          <button id="viewTableBtn" class="px-3.5 py-1.5 rounded-md text-xs font-mono font-bold transition flex items-center gap-1.5 text-coffee-800 hover:text-coffee-950">
+            <i class="fa-solid fa-table-cells"></i>
+            <span>軍事情報檔案表</span>
+          </button>
+        </div>
+
+        <!-- Status Filter Filter Tabs -->
+        <div class="flex items-center gap-2">
+          <span class="text-xs text-coffee-600 font-mono hidden sm:inline">狀態篩選：</span>
+          <div class="inline-flex rounded-md border border-coffee-400 p-0.5 bg-parchment-50 text-xs font-mono">
+            <button class="status-tab px-2.5 py-1 rounded bg-coffee-700 text-parchment-100 font-bold" data-status="ALL">全部</button>
+            <button class="status-tab px-2.5 py-1 rounded text-coffee-800 hover:bg-parchment-200" data-status="watched">已閱</button>
+            <button class="status-tab px-2.5 py-1 rounded text-coffee-800 hover:bg-parchment-200" data-status="wishlist">想看</button>
+            <button class="status-tab px-2.5 py-1 rounded text-coffee-800 hover:bg-parchment-200" data-status="favorite">典藏</button>
+          </div>
+          <span class="text-xs font-mono text-coffee-700 ml-2">調閱：<b id="filteredCount" class="text-coffee-900 text-sm">0</b> 卷</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT DISPLAY CONTAINER -->
+    <main id="contentContainer" class="min-h-[500px]">
+      
+      <!-- 1. Chronological Timeline View -->
+      <div id="timelineView" class="relative pl-6 sm:pl-10 space-y-7 before:content-[''] before:absolute before:left-3 sm:before:left-5 before:top-3 before:bottom-3 before:w-0.5 before:bg-coffee-400">
+        <!-- Generated by JavaScript -->
+      </div>
+
+      <!-- 2. Theaters Matrix View -->
+      <div id="theatersView" class="hidden space-y-10">
+        <!-- Generated by JavaScript -->
+      </div>
+
+      <!-- 3. Comprehensive Military Dossier Table -->
+      <div id="tableView" class="hidden overflow-x-auto bg-parchment-100 border-2 border-coffee-700 rounded-xl shadow-md">
+        <table class="w-full text-left text-xs sm:text-sm font-serif border-collapse">
+          <thead class="bg-coffee-800 text-parchment-100 font-mono border-b-2 border-coffee-900 tracking-wider">
+            <tr>
+              <th class="py-3 px-3 w-14 text-center">標記</th>
+              <th class="py-3 px-3">史實作戰時間</th>
+              <th class="py-3 px-3">歷史戰役 / 事件</th>
+              <th class="py-3 px-3">片名 / 外文原名</th>
+              <th class="py-3 px-3">國家</th>
+              <th class="py-3 px-3">導演</th>
+              <th class="py-3 px-3">形式/上映</th>
+              <th class="py-3 px-3">主要獲獎與榮譽</th>
+              <th class="py-3 px-3 text-center">情蒐</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody" class="divide-y divide-coffee-300/80 text-coffee-900 bg-parchment-50">
+            <!-- Rows injected by JavaScript -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Empty State -->
+      <div id="emptyNotice" class="hidden text-center py-20 bg-parchment-100 border border-dashed border-coffee-400 rounded-xl">
+        <div class="w-16 h-16 mx-auto mb-3 rounded-full bg-parchment-200 flex items-center justify-center text-coffee-500 text-2xl">
+          <i class="fa-solid fa-folder-open"></i>
+        </div>
+        <h3 class="text-lg font-bold text-coffee-900">未調閱到任何符合條件的歷史影音卷宗</h3>
+        <p class="text-xs text-coffee-600 mt-1">請嘗試清除關鍵字、調整國家或將篩選器重設為「全部」</p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t-2 border-coffee-400 pt-6 pb-12 text-center text-xs font-mono text-coffee-600 space-y-2">
+      <div class="flex items-center justify-center gap-2 text-coffee-800">
+        <i class="fa-solid fa-scroll text-vintage-gold"></i>
+        <span>WWII HISTORICAL ARCHIVE SYSTEM</span>
+        <span>•</span>
+        <span>WARM PARCHMENT EDITION</span>
+      </div>
+      <p>文獻考證取材自軍事戰史、各大國際影展、美國影藝學院 (AMPAS) 及影史檔案。觀影紀錄即時儲存於本機瀏覽器。</p>
+    </footer>
+  </div>
+
+  <!-- Notification Toast -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-coffee-900 border-2 border-vintage-gold text-parchment-100 px-4 py-3 rounded-md shadow-2xl flex items-center gap-3 font-mono text-xs">
+    <i id="toastIcon" class="fa-solid fa-check text-vintage-gold"></i>
+    <span id="toastMsg">情報紀錄已更新</span>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC & COMPLETE EXPANDED DATABASE -->
+  <script>
+    const mediaDatabase = [
+      {
+        id: "ww2-01",
+        histDate: "1937年08月",
+        histSort: "1937-08",
+        theater: "太平洋與亞洲戰場",
+        battle: "淞滬會戰（四行倉庫保衛戰）",
+        titleZh: "八佰",
+        titleEn: "The Eight Hundred",
+        releaseYear: 2020,
+        type: "movie",
+        country: "中國",
+        director: "管虎",
+        awards: "榮獲華鼎獎最佳影片、亞洲電影大獎最佳視覺效果獎，全球年度票房冠軍",
+        awardLevel: "MAJOR_WIN",
+        summary: "1937年中日淞滬會戰末期，第88師524團副團長謝晉元率領400餘名官兵（對外號稱八百壯士）固守蘇州河北岸的四行倉庫，阻擊日軍四晝夜。",
+        tags: ["中日戰爭", "四行倉庫", "肉搏防禦"]
+      },
+      {
+        id: "ww2-02",
+        histDate: "1938年09月",
+        histSort: "1938-09",
+        theater: "決策後方與大審判",
+        battle: "慕尼黑協定前夕（英德外交角力與綏靖政策）",
+        titleZh: "慕尼黑交鋒戰",
+        titleEn: "Munich – The Edge of War",
+        releaseYear: 2021,
+        type: "movie",
+        country: "英國 / 德國",
+        director: "克里斯蒂安·施沃霍夫 (Christian Schwochow)",
+        awards: "入圍英國電影獨立獎等多項技術獎項提名",
+        awardLevel: "NOMINEE",
+        summary: "改編自羅伯特·哈里斯小說。1938年秋天希特勒圖謀蘇台德區，英德兩位昔日牛津同窗在慕尼黑峰會各為其主，試圖揭露希特勒征服歐洲的真實野心。",
+        tags: ["綏靖政策", "張伯倫", "政治諜戰"]
+      },
+      {
+        id: "ww2-03",
+        histDate: "1939年05月",
+        histSort: "1939-05",
+        theater: "太平洋與亞洲戰場",
+        battle: "諾門罕戰役（蘇日邊境裝甲衝突）",
+        titleZh: "登陸之日",
+        titleEn: "My Way / 마이 웨이",
+        releaseYear: 2011,
+        type: "movie",
+        country: "韓國",
+        director: "姜帝圭",
+        awards: "入圍韓國大鐘獎最佳服裝設計與技術獎，斥資數百億韓元還原跨國戰場",
+        awardLevel: "NOMINEE",
+        summary: "基於真實歷史照片改編。一名朝鮮青年與日本軍官在諾門罕戰役被蘇軍俘虜，歷經蘇聯古拉格勞改營、東線對德作戰再被編入德軍，最終被推上諾曼第海灘防線。",
+        tags: ["諾門罕", "戰俘轉輾", "橫跨三大洲"]
+      },
+      {
+        id: "ww2-04",
+        histDate: "1939年09月01日",
+        histSort: "1939-09-01",
+        theater: "東線蘇德戰場",
+        battle: "西盤半島戰役（納粹德國閃擊波蘭開火首戰）",
+        titleZh: "西盤半島戰役",
+        titleEn: "Tajemnica Westerplatte / 1939 Battle of Westerplatte",
+        releaseYear: 2013,
+        type: "movie",
+        country: "波蘭",
+        director: "帕維爾·霍切夫 (Pawel Chochlew)",
+        awards: "波蘭電影節競賽片、獲波蘭國家電影基金會重點扶持",
+        awardLevel: "NOMINEE",
+        summary: "1939年9月1日拂曉，德軍戰艦開火轟擊西盤半島。182名波蘭士兵在糧彈匱乏下，以驚人意志對抗德軍戰艦重砲、斯圖卡俯衝轟炸機與步兵圍攻長達七天。",
+        tags: ["德波戰爭", "開戰首戰", "波蘭要塞"]
+      },
+      {
+        id: "ww2-05",
+        histDate: "1939年11月 ~ 1940年03月",
+        histSort: "1939-11",
+        theater: "東線蘇德戰場",
+        battle: "冬季戰爭（蘇芬戰爭 / 曼納海姆防線）",
+        titleZh: "冬季戰爭 / 家園保衛戰",
+        titleEn: "Talvisota / The Winter War",
+        releaseYear: 1989,
+        type: "movie",
+        country: "芬蘭",
+        director: "佩卡·帕利卡 (Pekka Parikka)",
+        awards: "榮獲芬蘭電影尤西獎 (Jussi Awards) 最佳導演等6項大獎，角逐柏林影展金熊獎",
+        awardLevel: "MAJOR_WIN",
+        summary: "芬蘭影史經典鉅作。忠實記錄芬蘭預備役士兵在零下40度酷寒的卡累利阿地峽，以白色偽裝服、莫洛托夫雞尾酒與滑雪狙擊戰法重創蘇聯百萬大軍。",
+        tags: ["蘇芬戰爭", "極地雪戰", "莫洛托夫雞尾酒"]
+      },
+      {
+        id: "ww2-06",
+        histDate: "1939年成軍",
+        histSort: "1939-12",
+        theater: "戰略空戰與航空隊",
+        battle: "塔斯克基黑人飛行大隊傳奇（第332戰鬥機群）",
+        titleZh: "紅色翼尾",
+        titleEn: "Red Tails",
+        releaseYear: 2012,
+        type: "movie",
+        country: "美國",
+        director: "安東尼·海明威 (Anthony Hemingway) / 喬治·盧卡斯監製",
+        awards: "榮獲美國非裔形象獎 (NAACP Image Award) 最佳影片與最佳獨立電影獎",
+        awardLevel: "MAJOR_WIN",
+        summary: "講述二戰美軍首支黑人空戰部隊在面對國內種族隔離質疑時，以標誌性的紅色螺旋槳機尾P-51野馬式，在歐洲空戰護航B-17轟炸機創下近乎零損失的非凡戰績。",
+        tags: ["黑人飛行員", "P-51野馬", "護航空中堡壘"]
+      },
+      {
+        id: "ww2-07",
+        histDate: "1940年04月",
+        histSort: "1940-04",
+        theater: "西歐與西線戰場",
+        battle: "納爾維克戰役（希特勒二戰初嚐敗績之役）",
+        titleZh: "納爾維克",
+        titleEn: "Narvik: Kampen om Narvik",
+        releaseYear: 2022,
+        type: "movie",
+        country: "挪威",
+        director: "埃里克·斯約格別格 (Erik Skjoldbjærg)",
+        awards: "榮獲挪威阿曼達獎 (Amanda Awards) 最佳男配角、最佳音效等3項大獎",
+        awardLevel: "MAJOR_WIN",
+        summary: "圍繞挪威北部輸送瑞典鐵礦的核心不凍港納爾維克，挪威士兵與英法聯軍聯手在暴風雪山脈中與德國精銳山地獵兵交戰，是希特勒在二戰中首度遭到擊退的戰役。",
+        tags: ["挪威戰役", "山地獵兵", "鐵礦重鎮"]
+      },
+      {
+        id: "ww2-08",
+        histDate: "1940年05月26日 ~ 06月04日",
+        histSort: "1940-05-26a",
+        theater: "西歐與西線戰場",
+        battle: "發電機行動（敦克爾克大撤退）",
+        titleZh: "敦克爾克大行動",
+        titleEn: "Dunkirk",
+        releaseYear: 2017,
+        type: "movie",
+        country: "英國 / 美國 / 法國",
+        director: "克里斯多福·諾蘭 (Christopher Nolan)",
+        awards: "榮獲奧斯卡最佳音效剪輯、最佳混音、最佳剪輯3項大獎，入圍最佳影片及導演",
+        awardLevel: "OSCAR_WIN",
+        summary: "以陸（防波堤一週）、海（平民救援船一日）、空（噴火戰鬥機一小時）三條非線性時空維度，呈現40萬英法聯軍被德軍困於沙灘時命懸一線的歷史撤退行動。",
+        tags: ["敦克爾克", "諾蘭執導", "噴火式戰鬥機"]
+      },
+      {
+        id: "ww2-09",
+        histDate: "1940年05月",
+        histSort: "1940-05-26b",
+        theater: "西歐與西線戰場",
+        battle: "敦克爾克海灘長鏡頭悲歌",
+        titleZh: "贖罪",
+        titleEn: "Atonement",
+        releaseYear: 2007,
+        type: "movie",
+        country: "英國 / 法國",
+        director: "喬·萊特 (Joe Wright)",
+        awards: "榮獲奧斯卡金像獎最佳原創配樂獎、金球獎最佳劇情片大獎",
+        awardLevel: "OSCAR_WIN",
+        summary: "片中長達5分半鐘的一鏡到底長鏡頭名垂影史。藉由被徵召入伍的男主角羅比雙眼，冷靜而詩意地掃過敦克爾克海灘上散落的殘骸、旋轉木馬與絕望合唱的士兵。",
+        tags: ["經典一鏡到底", "英國遠征軍", "反戰悲歌"]
+      },
+      {
+        id: "ww2-10",
+        histDate: "1940年05月",
+        histSort: "1940-05-26c",
+        theater: "西歐與西線戰場",
+        battle: "敦克爾克大撤退歷史還原紀實",
+        titleZh: "敦刻爾克大撤退",
+        titleEn: "Dunkirk",
+        releaseYear: 2004,
+        type: "movie",
+        country: "英國 (BBC)",
+        director: "亞歷克斯·霍姆斯 (Alex Holmes)",
+        awards: "入圍英國電視學院獎 (BAFTA TV) 最佳戲劇獎，BBC權威歷史考證",
+        awardLevel: "NOMINEE",
+        summary: "BBC精心製作的三部曲傳記紀實電影，忠實採用生還老兵與戰時內閣會議日誌，從海灘前線、英國邱吉爾內閣到平民小船三重視角徹底剖析發電機行動。",
+        tags: ["BBC紀實", "歷史考據", "邱吉爾內閣"]
+      },
+      {
+        id: "ww2-11",
+        histDate: "1940年08月 ~ 10月",
+        histSort: "1940-08",
+        theater: "戰略空戰與航空隊",
+        battle: "不列顛空戰（鷹日計畫與倫敦大轟炸）",
+        titleZh: "不列顛之戰",
+        titleEn: "Battle of Britain",
+        releaseYear: 1969,
+        type: "movie",
+        country: "英國",
+        director: "蓋·漢彌爾頓 (Guy Hamilton)",
+        awards: "集結大量二戰真實噴火與Bf-109實機空中纏鬥，影史最偉大航空戰爭片之一",
+        awardLevel: "MAJOR_WIN",
+        summary: "勞倫斯·奧立佛與麥可·肯恩主演。動用上百架二戰真機重現英國皇家空軍以雷達導引系統和噴火戰鬥機，瓦解戈林納粹空軍制空權企圖的史詩轉折點。",
+        tags: ["皇家空軍", "雷達導航戰", "噴火式VS梅塞施密特"]
+      },
+      {
+        id: "ww2-12",
+        histDate: "1940年",
+        histSort: "1940-09",
+        theater: "戰略空戰與航空隊",
+        battle: "捷克流亡飛行員加入英國皇家空軍",
+        titleZh: "烈日長紅",
+        titleEn: "Dark Blue World / Tmavomodrý svět",
+        releaseYear: 2001,
+        type: "movie",
+        country: "捷克 / 英國 / 德國",
+        director: "揚·斯維拉克 (Jan Svěrák)",
+        awards: "榮獲捷克獅獎最佳導演、最佳攝影等5項大獎，捷克國寶級空戰名作",
+        awardLevel: "MAJOR_WIN",
+        summary: "捷克奧斯卡金獎導演名作。講述捷克飛行員流亡英國加入皇家空軍參與英倫空戰，戰後滿懷熱血返國卻被戰後親蘇政權視為「西方資本主義間諜」關入勞改營的悲劇宿命。",
+        tags: ["捷克中隊", "空中纏鬥", "戰後審判"]
+      },
+      {
+        id: "ww2-13",
+        histDate: "1941年02月 ~ 1944年12月",
+        histSort: "1941-02",
+        theater: "北非與地中海",
+        battle: "非洲軍團傳奇與大西洋壁壘防線",
+        titleZh: "隆美爾",
+        titleEn: "Rommel",
+        releaseYear: 2012,
+        type: "movie",
+        country: "德國",
+        director: "尼基·斯坦 (Niki Stein)",
+        awards: "入圍德國電視獎最佳電視電影，德國視角客觀審視爭議名將",
+        awardLevel: "NOMINEE",
+        summary: "聚焦於「沙漠之狐」隆美爾元帥在北非戰場戰局惡化以及回國主持法國大西洋壁壘工事時，在希特勒盲目狂熱指令與720密謀暗殺元首案之間的痛苦掙扎。",
+        tags: ["隆美爾", "北非軍團", "720暗殺計畫"]
+      },
+      {
+        id: "ww2-14",
+        histDate: "1941年04月 ~ 12月",
+        histSort: "1941-04",
+        theater: "北非與地中海",
+        battle: "托布魯克要塞包圍戰",
+        titleZh: "沙漠之鼠",
+        titleEn: "The Desert Rats",
+        releaseYear: 1953,
+        type: "movie",
+        country: "美國",
+        director: "羅伯特·懷斯 (Robert Wise)",
+        awards: "入圍第26屆奧斯卡金像獎最佳原創劇本獎",
+        awardLevel: "NOMINEE",
+        summary: "由理查·波頓主演。聚焦於以澳洲第9步兵師為核心的盟軍部隊，在利比亞沙漠要塞托布魯克頂住隆美爾非洲軍團裝甲狂攻達242天的艱辛防衛戰。",
+        tags: ["托布魯克", "澳洲步兵", "沙漠壕溝戰"]
+      },
+      {
+        id: "ww2-15",
+        histDate: "1941年06月15日起",
+        histSort: "1941-06-15",
+        theater: "東線蘇德戰場",
+        battle: "巴巴羅薩進攻、東線戰場至帝國崩潰（全景五人傳奇）",
+        titleZh: "我們的父輩（共3集）",
+        titleEn: "Generation War / Unsere Mütter, unsere Väter",
+        releaseYear: 2013,
+        type: "series",
+        country: "德國",
+        director: "菲利普·卡德爾巴赫 (Philipp Kadelbach)",
+        awards: "榮獲國際艾美獎 (International Emmy) 最佳電視迷你劇、德國電視獎最佳迷你劇",
+        awardLevel: "MAJOR_WIN",
+        summary: "德國現象級迷你影集。五位柏林摯友在1941年夏天許下「聖誕節再聚」的諾言，卻在蘇德東線殘酷戰鬥、戰地醫院血腥浩劫與納粹集中營種族屠殺中被無情碾碎，人性反思至深。",
+        tags: ["東線殘酷", "德國青年命運", "神劇巔峰"]
+      },
+      {
+        id: "ww2-16",
+        histDate: "1941年06月22日 ~ 06月30日",
+        histSort: "1941-06-22",
+        theater: "東線蘇德戰場",
+        battle: "布列斯特要塞保衛戰（蘇德戰爭第一槍）",
+        titleZh: "布列斯特要塞",
+        titleEn: "Brest Fortress / Brestskaya krepost",
+        releaseYear: 2010,
+        type: "movie",
+        country: "俄羅斯 / 白俄羅斯",
+        director: "亞歷山大·科特 (Alexander Kott)",
+        awards: "榮獲俄羅斯電影金鷹獎、尼卡獎 (Nika Awards) 最佳音效與美術指導等多項殊榮",
+        awardLevel: "MAJOR_WIN",
+        summary: "1941年6月22日納粹發動巴巴羅薩行動突襲邊境要塞。蘇聯紅軍守備隊在供水斷絕、重砲轟頂的孤立堡壘中堅持阻擊，戰至最後一發子彈，戰爭場面寫實殘酷。",
+        tags: ["巴巴羅薩", "要塞絕地死守", "俄白合拍史詩"]
+      },
+      {
+        id: "ww2-17",
+        histDate: "1941年09月 ~ 1944年01月",
+        histSort: "1941-09",
+        theater: "東線蘇德戰場",
+        battle: "列寧格勒圍城戰（長達872天圍困與生命之路）",
+        titleZh: "列寧格勒",
+        titleEn: "Attack on Leningrad",
+        releaseYear: 2009,
+        type: "movie",
+        country: "俄羅斯 / 英國",
+        director: "亞歷山大·布拉夫斯基 (Aleksandr Buravsky)",
+        awards: "入圍俄羅斯金鷹獎，真實展現二戰傷亡最慘烈的平民圍城浩劫",
+        awardLevel: "NOMINEE",
+        summary: "二戰最悲痛的圍城戰役。一名英國女記者被困於圍困的列寧格勒，與蘇聯女民警在零下40度寒冬、飢饉甚至人相食的極端環境中，依靠拉多加湖「生命之路」冰上運輸線掙扎求存。",
+        tags: ["圍城浩劫", "生命之路", "平民抗戰"]
+      },
+      {
+        id: "ww2-18",
+        histDate: "1941年12月07日",
+        histSort: "1941-12-07a",
+        theater: "太平洋與亞洲戰場",
+        battle: "偷襲珍珠港（太平洋戰爭全面爆發）",
+        titleZh: "虎！虎！虎！",
+        titleEn: "Tora! Tora! Tora!",
+        releaseYear: 1970,
+        type: "movie",
+        country: "美國 / 日本",
+        director: "理查·費里徹、舛田利雄、深作欣二",
+        awards: "榮獲第43屆奧斯卡金像獎最佳視覺效果獎，入圍最佳攝影、最佳音效等5項提名",
+        awardLevel: "OSCAR_WIN",
+        summary: "美日雙方導演各自拍攝本國視角的客觀史詩教科書。巨細靡遺剖析美軍雷達站警報失誤、外交電報解密延誤與山本五十六航艦機動部隊突襲全景。",
+        tags: ["珍珠港", "日美雙向還原", "軍史客觀考據"]
+      },
+      {
+        id: "ww2-19",
+        histDate: "1941年12月07日",
+        histSort: "1941-12-07b",
+        theater: "太平洋與亞洲戰場",
+        battle: "珍珠港事件與杜立德空襲東京",
+        titleZh: "珍珠港",
+        titleEn: "Pearl Harbor",
+        releaseYear: 2001,
+        type: "movie",
+        country: "美國",
+        director: "麥可·貝 (Michael Bay)",
+        awards: "榮獲第74屆奧斯卡金像獎最佳音效剪輯獎，入圍最佳原創歌曲、視覺效果",
+        awardLevel: "OSCAR_WIN",
+        summary: "麥可·貝商業戰爭鉅作。以逼真震撼的40分鐘轟炸特效重現戰艦大街亞利桑那號沉沒慘況，後半段生動描繪吉米·杜立德中校率領B-25大黃蜂號航艦起飛空襲東京之壯舉。",
+        tags: ["杜立德空襲", "戰艦沉沒", "商業特效巔峰"]
+      },
+      {
+        id: "ww2-20",
+        histDate: "1942年春 ~ 1943年",
+        histSort: "1942-03",
+        theater: "大西洋海戰與潛艇",
+        battle: "大西洋護航戰（對抗U艇黑坑狼群戰術）",
+        titleZh: "怒海戰艦",
+        titleEn: "Greyhound",
+        releaseYear: 2020,
+        type: "movie",
+        country: "美國",
+        director: "艾倫·史奈德 (Aaron Schneider)",
+        awards: "入圍第93屆奧斯卡金像獎最佳音效獎、英國電影學院獎最佳音效",
+        awardLevel: "NOMINEE",
+        summary: "湯姆·漢克編劇並主演。盟軍護航驅逐艦基靈號在無空中掩護的大西洋「黑坑」空隙中，與納粹U型潛艇狼群展開長達數晝夜無休止的聲納追蹤、深水炸彈投放與近距砲戰。",
+        tags: ["驅逐艦反潛", "U艇狼群", "聲納戰術"]
+      },
+      {
+        id: "ww2-21",
+        histDate: "1942年06月04日 ~ 06月07日",
+        histSort: "1942-06-04a",
+        theater: "太平洋與亞洲戰場",
+        battle: "中途島海戰（美軍密碼破譯與命運五分鐘）",
+        titleZh: "決戰中途島",
+        titleEn: "Midway",
+        releaseYear: 2019,
+        type: "movie",
+        country: "美國 / 德國",
+        director: "羅蘭·艾默瑞奇 (Roland Emmerich)",
+        awards: "全球票房突破1.2億美元，精準重現SBD無畏式俯衝轟炸機作戰細節",
+        awardLevel: "NOMINEE",
+        summary: "詳實刻劃情報官艾德溫·萊頓與羅契福破譯日軍JN-25密碼鎖定AF目標，以及理查·貝斯特等俯衝轟炸機飛行員在關鍵五分鐘內擊沉赤城、加賀、蒼龍三艘航艦的歷史逆轉。",
+        tags: ["中途島", "情報破譯", "SBD俯衝轟炸"]
+      },
+      {
+        id: "ww2-22",
+        histDate: "1942年06月04日",
+        histSort: "1942-06-04b",
+        theater: "太平洋與亞洲戰場",
+        battle: "中途島海戰（經典老版）",
+        titleZh: "中途島",
+        titleEn: "Midway",
+        releaseYear: 1976,
+        type: "movie",
+        country: "美國",
+        director: "傑克·斯邁特 (Jack Smight)",
+        awards: "集結查爾登·希士頓、亨利·方達、三船敏郎等巨星，採用大量二戰彩色真實空戰膠卷",
+        awardLevel: "MAJOR_WIN",
+        summary: "老牌全明星戰爭片。以多重視角呈現美軍太平洋艦隊司令尼米茲與日本聯合艦隊司令長官山本五十六在珊瑚海與中途島海域的航艦排兵布陣。",
+        tags: ["三船敏郎", "尼米茲", "航艦對決"]
+      },
+      {
+        id: "ww2-23",
+        histDate: "1942年07月",
+        histSort: "1942-07",
+        theater: "西歐與西線戰場",
+        battle: "日裔美軍第442步兵團義大利與法國血戰",
+        titleZh: "孤軍",
+        titleEn: "Only the Brave",
+        releaseYear: 2006,
+        type: "movie",
+        country: "美國",
+        director: "蓮·西奧里 (Lane Nishikawa)",
+        awards: "榮獲夏威夷國際電影節觀眾票選最佳影片獎",
+        awardLevel: "MAJOR_WIN",
+        summary: "講述二戰美軍傳奇部隊「第442步兵團」。這群日裔二代士兵的家人大多被關押在美國本土拘留營，但他們為了證明忠誠在歐洲戰場無畏衝鋒，成為美軍史上獲頒紫心勳章最多的部隊。",
+        tags: ["442步兵團", "日裔美軍", "紫心勳章傳奇"]
+      },
+      {
+        id: "ww2-24",
+        histDate: "1942年07月 ~ 1943年02月",
+        histSort: "1942-07-17",
+        theater: "東線蘇德戰場",
+        battle: "史達林格勒戰役（伏爾加河殘酷巷戰與狙擊對決）",
+        titleZh: "大敵當前",
+        titleEn: "Enemy at the Gates",
+        releaseYear: 2001,
+        type: "movie",
+        country: "美國 / 德國 / 英國 / 愛爾蘭",
+        director: "尚-賈克·阿諾 (Jean-Jacques Annaud)",
+        awards: "入圍歐洲電影獎最佳男主角，開場紅軍渡伏爾加河登陸場面名列影史前茅",
+        awardLevel: "NOMINEE",
+        summary: "以蘇聯傳奇狙擊手瓦西里·柴契夫與德軍貴族神槍手康尼少校在廢墟殘骸中的獵殺為核心，真實呈現史達林格勒拖拉機廠、紅八月工廠寸土必爭的巷戰絞肉機。",
+        tags: ["瓦西里", "狙擊對決", "史達林格勒"]
+      },
+      {
+        id: "ww2-25",
+        histDate: "1942年07月 ~ 1943年02月",
+        histSort: "1942-07-18",
+        theater: "東線蘇德戰場",
+        battle: "史達林格勒戰役（德軍第六集團軍覆滅）",
+        titleZh: "史達林格勒（德國版）",
+        titleEn: "Stalingrad",
+        releaseYear: 1993,
+        type: "movie",
+        country: "德國 / 瑞典",
+        director: "約瑟夫·維爾斯麥爾 (Joseph Vilsmaier)",
+        awards: "榮獲巴伐利亞電影獎最佳剪輯、最佳製作等多項大獎，被譽為最寫實反戰經典",
+        awardLevel: "MAJOR_WIN",
+        summary: "德國人自己拍攝的極致反省之作。跟隨德軍第6集團軍一支步兵突擊隊，從意氣風發抵達陽光明媚的伏爾加河，到被包圍、凍餒、目睹傷兵截肢，最終全員凍死於白雪廢墟之中。",
+        tags: ["第六集團軍", "包圍圈", "極度寫實反戰"]
+      },
+      {
+        id: "ww2-26",
+        histDate: "1942年08月 ~ 1943年02月",
+        histSort: "1942-08-07",
+        theater: "太平洋與亞洲戰場",
+        battle: "瓜達康納爾島戰役（亨德森機場血戰）",
+        titleZh: "太平洋戰爭（共10集）",
+        titleEn: "The Pacific",
+        releaseYear: 2010,
+        type: "series",
+        country: "美國",
+        director: "傑瑞米·波德斯瓦、提姆·范恩·派頓等",
+        awards: "榮獲第62屆艾美獎最佳迷你影集等8項大獎，入圍金球獎最佳迷你劇",
+        awardLevel: "MAJOR_WIN",
+        summary: "HBO耗資2億美元打造。透過陸戰隊員萊基、斯萊吉與榮譽勳章得主約翰·巴西隆的三重視角，毫無保留還原瓜島、格洛斯特角、佩萊利烏與沖繩島叢林中的血腥肉搏與心靈折磨。",
+        tags: ["瓜島戰役", "佩萊利烏島", "海軍陸戰隊第一師"]
+      },
+      {
+        id: "ww2-27",
+        histDate: "1942年08月",
+        histSort: "1942-08-08",
+        theater: "太平洋與亞洲戰場",
+        battle: "瓜島之役與靈魂思辨",
+        titleZh: "紅色警戒",
+        titleEn: "The Thin Red Line",
+        releaseYear: 1998,
+        type: "movie",
+        country: "美國",
+        director: "泰倫斯·馬利克 (Terrence Malick)",
+        awards: "榮獲第49屆柏林影展最高榮譽金熊獎，入圍第71屆奧斯卡7項大獎包括最佳影片與導演",
+        awardLevel: "MAJOR_WIN",
+        summary: "哲學戰爭電影頂點。在瓜達康納爾島翠綠草浪與熱帶鳥鳴的大自然背景下，透過士兵內心獨白探討殘酷征服、高地進攻中恐懼與人性的自我救贖。",
+        tags: ["金熊獎", "高地攻防", "哲學戰爭片"]
+      },
+      {
+        id: "ww2-28",
+        histDate: "1942年08月",
+        histSort: "1942-08-09",
+        theater: "戰俘營與情報密戰",
+        battle: "基輔死刑球賽（烏克蘭戰俘足球傳奇）",
+        titleZh: "勝利大逃亡",
+        titleEn: "Victory / Escape to Victory",
+        releaseYear: 1981,
+        type: "movie",
+        country: "美國 / 英國",
+        director: "約翰·休斯頓 (John Huston)",
+        awards: "入圍第12屆莫斯科國際電影節主競賽單元，球王比利與席維斯·史特龍同台",
+        awardLevel: "NOMINEE",
+        summary: "改編自二戰基輔迪納摩隊真實「死亡球賽」。盟軍戰俘組成的足球隊在巴黎體育場與納粹德國國家隊踢友誼賽，在全場法國民眾歌唱馬賽曲的掩護下發動驚天越獄。",
+        tags: ["足球越獄", "球王比利", "戰俘反抗"]
+      },
+      {
+        id: "ww2-29",
+        histDate: "1942年10月23日",
+        histSort: "1942-10-23",
+        theater: "北非與地中海",
+        battle: "第二次阿拉曼戰役（埃及沙漠血線）",
+        titleZh: "血戰阿拉曼",
+        titleEn: "El Alamein - The Line of Fire",
+        releaseYear: 2002,
+        type: "movie",
+        country: "義大利",
+        director: "恩佐·蒙特萊奧尼 (Enzo Monteleone)",
+        awards: "榮獲義大利電影大衛獎 (David di Donatello) 最佳攝影、剪輯、音效3項大獎",
+        awardLevel: "MAJOR_WIN",
+        summary: "義大利視角的二戰名作。聚焦義大利帕維亞步兵師士兵在缺水、少糧、缺乏重武器的埃及沙漠深處，面對英軍第八軍團重砲碾壓，仍被迫以血肉阻擊敵人的悲壯苦境。",
+        tags: ["阿拉曼戰役", "義大利步兵", "沙漠殘酷寫實"]
+      },
+      {
+        id: "ww2-30",
+        histDate: "1942年",
+        histSort: "1942-12",
+        theater: "戰俘營與情報密戰",
+        battle: "爪哇島日軍戰俘營與東西文化碰撞",
+        titleZh: "俘虜 / 戰場上的快樂聖誕",
+        titleEn: "Merry Christmas, Mr. Lawrence",
+        releaseYear: 1983,
+        type: "movie",
+        country: "日本 / 英國 / 紐西蘭",
+        director: "大島渚",
+        awards: "榮獲英國電影學院獎最佳電影配樂獎（坂本龍一）、入圍坎城影展金棕櫚獎",
+        awardLevel: "MAJOR_WIN",
+        summary: "大島渚執導，大衛·鮑伊、坂本龍一與北野武主演。深入探討爪哇島日軍戰俘營中武士道殘酷戒律、英國紳士榮譽感與壓抑禁忌之愛，坂本龍一的主題配樂永載史冊。",
+        tags: ["坂本龍一", "大衛鮑伊", "坎城競賽片"]
+      },
+      {
+        id: "ww2-31",
+        histDate: "1943年春",
+        histSort: "1943-03",
+        theater: "戰俘營與情報密戰",
+        battle: "肉餡行動（盟軍西西里登陸戰略欺敵）",
+        titleZh: "死間行動",
+        titleEn: "Operation Mincemeat",
+        releaseYear: 2021,
+        type: "movie",
+        country: "英國 / 美國",
+        director: "約翰·麥登 (John Madden)",
+        awards: "柯林·佛斯領銜，被權威軍史學界評為情報騙局改編的最佳電影之一",
+        awardLevel: "NOMINEE",
+        summary: "1943年英軍情報部門策劃二戰最巧妙欺敵計謀：利用一具帶有偽造絕密文件的流浪漢浮屍漂流至西班牙海灘，成功誤導希特勒將主力部隊調離西西里島前往希臘防守。",
+        tags: ["肉餡行動", "情報諜戰", "柯林佛斯"]
+      },
+      {
+        id: "ww2-32",
+        histDate: "1943年春季起",
+        histSort: "1943-04",
+        theater: "戰略空戰與航空隊",
+        battle: "第八航空隊白晝深入德國本土大轟炸（血染的一百大隊）",
+        titleZh: "空戰群英（共9集）",
+        titleEn: "Masters of the Air",
+        releaseYear: 2024,
+        type: "series",
+        country: "美國",
+        director: "凱瑞·福永、安娜·波頓、迪·里斯等",
+        awards: "入圍第76屆艾美獎最佳混音、最佳特殊視覺效果等多項大獎提名",
+        awardLevel: "NOMINEE",
+        summary: "史匹柏與湯姆·漢克二戰三部曲終章。忠實呈現美國陸軍第八航空隊第100轟炸大隊駕駛B-17空中堡壘，在零下50度高空與德軍FW-190瘋狂攔截下的生存率考驗與戰俘越獄營救。",
+        tags: ["B-17空中堡壘", "第八航空隊", "高空缺氧作戰"]
+      },
+      {
+        id: "ww2-33",
+        histDate: "1943年05月",
+        histSort: "1943-05-17",
+        theater: "戰略空戰與航空隊",
+        battle: "完成25次白晝空襲返鄉榮譽任務",
+        titleZh: "英烈的歲月：曼菲斯美女號",
+        titleEn: "Memphis Belle",
+        releaseYear: 1990,
+        type: "movie",
+        country: "英國 / 美國",
+        director: "麥可·卡頓-瓊斯 (Michael Caton-Jones)",
+        awards: "大衛·普特南監製，全球航空影迷心目中無可替代的B-17經典",
+        awardLevel: "MAJOR_WIN",
+        summary: "講述駐紮在英國的B-17轟炸機「曼菲斯美女號」在只要完成第25次任務就能全員返鄉的背景下，深入德國重兵防守的威廉港執行轟炸飛機製造廠的最後生死考驗。",
+        tags: ["曼菲斯美女號", "B-17機組員", "高空空戰"]
+      },
+      {
+        id: "ww2-34",
+        histDate: "1943年05月起",
+        histSort: "1943-05-27",
+        theater: "戰俘營與情報密戰",
+        battle: "太平洋墜機海上漂流47天與日本戰俘營虐待",
+        titleZh: "永不屈服",
+        titleEn: "Unbroken",
+        releaseYear: 2014,
+        type: "movie",
+        country: "美國",
+        director: "安潔莉娜·裘莉 (Angelina Jolie)",
+        awards: "入圍第87屆奧斯卡金像獎最佳攝影、音效剪輯、混音3項大獎，AFI年度十佳電影",
+        awardLevel: "NOMINEE",
+        summary: "改編自奧運長跑選手路易斯·讚佩里尼的真實生還傳奇。B-24墜海後在太平洋漂流47天遭遇鯊魚與日軍掃射，被俘後在日本戰俘營面對渡邊睦弘殘忍折磨，以超人意志堅持到日本投降。",
+        tags: ["路易斯讚佩里尼", "海上求生", "戰俘不屈意志"]
+      },
+      {
+        id: "ww2-35",
+        histDate: "1943年夏",
+        histSort: "1943-07",
+        theater: "北非與地中海",
+        battle: "哈士奇行動（西西里島登陸與裝甲狂奔）",
+        titleZh: "巴頓將軍",
+        titleEn: "Patton",
+        releaseYear: 1970,
+        type: "movie",
+        country: "美國",
+        director: "法蘭克林·沙夫納 (Franklin J. Schaffner)",
+        awards: "榮獲第43屆奧斯卡金像獎最佳影片、最佳導演、最佳男主角等7項大獎",
+        awardLevel: "OSCAR_WIN",
+        summary: "喬治·C·史考特經典詮釋「血膽將軍」巴頓。影片精準還原其在北非痛擊隆美爾部隊後，率領美軍第7軍團閃擊西西里搶先蒙哥馬利攻陷墨西拿的軍事天才與傲慢性格。",
+        tags: ["巴頓將軍", "奧斯卡最佳影片", "裝甲突擊"]
+      },
+      {
+        id: "ww2-36",
+        histDate: "1943年",
+        histSort: "1943-08",
+        theater: "戰俘營與情報密戰",
+        battle: "泰緬死亡鐵路修築與桂河大橋爆破",
+        titleZh: "桂河大橋",
+        titleEn: "The Bridge on the River Kwai",
+        releaseYear: 1957,
+        type: "movie",
+        country: "英國 / 美國",
+        director: "大衛·連 (David Lean)",
+        awards: "榮獲第30屆奧斯卡金像獎最佳影片、最佳導演、最佳男主角等7項大獎",
+        awardLevel: "OSCAR_WIN",
+        summary: "英軍戰俘尼柯遜上校在日軍嚴刑下堅持日內瓦公約，為證明英國工兵卓越紀律而在泰緬叢林建起宏偉木橋，最後在盟軍特遣隊炸橋時深陷盲目軍人尊嚴的荒謬毀滅。",
+        tags: ["死亡鐵路", "奧斯卡大滿貫", "人性悖論"]
+      },
+      {
+        id: "ww2-37",
+        histDate: "1943年秋",
+        histSort: "1943-10",
+        theater: "東線蘇德戰場",
+        battle: "庫斯克會戰後德軍東線大潰退（塔曼半島防線）",
+        titleZh: "鐵十字勳章",
+        titleEn: "Cross of Iron",
+        releaseYear: 1977,
+        type: "movie",
+        country: "英國 / 西德",
+        director: "山姆·畢京柏 (Sam Peckinpah)",
+        awards: "榮獲德國電影金螢幕獎 (Golden Screen)，奧森·威爾斯譽為最偉大反戰片之一",
+        awardLevel: "MAJOR_WIN",
+        summary: "暴力美學大師山姆·畢京柏名作。聚焦東線德軍老兵施泰納中士，厭惡納粹虛偽政治口號，只想守護戰友性命；與一心渴望獲取「鐵十字勳章」鍍金的普魯士貴族上尉形成強烈對比。",
+        tags: ["德軍東線老兵", "山姆畢京柏", "勳章諷刺"]
+      },
+      {
+        id: "ww2-38",
+        histDate: "1944年06月05日 ~ 06日",
+        histSort: "1944-06-05",
+        theater: "西歐與西線戰場",
+        battle: "大君主行動（101空降師D-Day敵後跳傘空降）",
+        titleZh: "諾曼地大空降（共10集）",
+        titleEn: "Band of Brothers",
+        releaseYear: 2001,
+        type: "series",
+        country: "美國 / 英國",
+        director: "菲爾·奧爾登·羅賓森、湯姆·漢克等",
+        awards: "榮獲金球獎最佳迷你劇、第54屆艾美獎最佳迷你劇等6項大獎",
+        awardLevel: "MAJOR_WIN",
+        summary: "電視影史評分最高戰爭神劇。記錄美軍101空降師506團E連從托口阿新兵訓練、登陸日敵後空降摧毀布里考特莊園火砲，一路打到突出部巴斯通冰雪圍困與元首鷹巢的真實英雄群像。",
+        tags: ["E連弟兄", "101空降師", "電視影史最高分"]
+      },
+      {
+        id: "ww2-39",
+        histDate: "1944年06月06日",
+        histSort: "1944-06-06a",
+        theater: "西歐與西線戰場",
+        battle: "諾曼地登陸（奧馬哈海灘血戰與搶救任務）",
+        titleZh: "搶救雷恩大兵",
+        titleEn: "Saving Private Ryan",
+        releaseYear: 1998,
+        type: "movie",
+        country: "美國",
+        director: "史蒂芬·史匹柏 (Steven Spielberg)",
+        awards: "榮獲第71屆奧斯卡金像獎最佳導演、最佳攝影、剪輯、音效等5項大獎",
+        awardLevel: "OSCAR_WIN",
+        summary: "開場27分鐘的奧馬哈海灘血腥登陸徹底改寫世界戰爭片美學。隨後米勒上尉奉命率領遊騎兵小隊深入德軍佔領區尋找三位哥哥皆陣亡的傘兵雷恩，探討生命的沉重價值。",
+        tags: ["奧馬哈海灘", "史匹柏神作", "遊騎兵小隊"]
+      },
+      {
+        id: "ww2-40",
+        histDate: "1944年06月06日",
+        histSort: "1944-06-06b",
+        theater: "西歐與西線戰場",
+        battle: "諾曼地登陸24小時全景紀錄",
+        titleZh: "最長的一日",
+        titleEn: "The Longest Day",
+        releaseYear: 1962,
+        type: "movie",
+        country: "美國",
+        director: "肯·安納金、安德魯·馬頓、伯恩哈德·維基",
+        awards: "榮獲第35屆奧斯卡金像獎最佳攝影、最佳特殊效果2項大獎，入圍最佳影片",
+        awardLevel: "OSCAR_WIN",
+        summary: "集結約翰·韋恩、史恩·康納萊、亨利·方達等48位國際巨星。從盟軍最高指揮部艾森豪、法國抵抗組織、德軍西線元帥隆美爾與前線碉堡德軍，以全知客觀角度巨細靡遺重現D-Day。",
+        tags: ["全明星陣容", "全景視角", "黑白大片經典"]
+      },
+      {
+        id: "ww2-41",
+        histDate: "1944年06月 ~ 07月",
+        histSort: "1944-06-15",
+        theater: "太平洋與亞洲戰場",
+        battle: "塞班島戰役（狐狸隊長山區游擊游鬥至終戰）",
+        titleZh: "太平洋的奇蹟：狐狸大場榮",
+        titleEn: "Oba: The Last Samurai / 太平洋の奇跡",
+        releaseYear: 2011,
+        type: "movie",
+        country: "日本",
+        director: "平山秀幸",
+        awards: "入圍日本電影藍絲帶獎，竹野內豐精彩演繹獲好評",
+        awardLevel: "NOMINEE",
+        summary: "改編自美軍軍官唐·瓊斯紀實原著。塞班島戰役守軍玉碎後，大場榮大尉率領47名殘存官兵與200名日本平民隱匿於塔波查山叢林，以游擊戰術與美軍周旋512天，直到1945年12月才軍容整齊下山投降。",
+        tags: ["塞班島", "大場榮大尉", "叢林游擊"]
+      },
+      {
+        id: "ww2-42",
+        histDate: "1944年06月",
+        histSort: "1944-06-16",
+        theater: "太平洋與亞洲戰場",
+        battle: "塞班島戰役（納瓦霍風語密碼員傳奇）",
+        titleZh: "獵風行動",
+        titleEn: "Windtalkers",
+        releaseYear: 2002,
+        type: "movie",
+        country: "美國",
+        director: "吳宇森",
+        awards: "榮獲世界特技獎 (World Stunt Awards) 最佳火焰特技獎",
+        awardLevel: "MAJOR_WIN",
+        summary: "聚焦於美軍在太平洋島嶼作戰中最機密的資產：由納瓦霍族原住民語言改編的無法破譯之軍事代碼。尼可拉斯·凱吉飾演負責保護（以及在陷入日軍絕境時必須處決密碼員）的陸戰隊護衛。",
+        tags: ["風語密碼", "塞班島", "吳宇森槍戰美學"]
+      },
+      {
+        id: "ww2-43",
+        histDate: "1944年09月",
+        histSort: "1944-09-17",
+        theater: "西歐與西線戰場",
+        battle: "市場花園行動（盟軍史上最大規模空降挫敗）",
+        titleZh: "奪橋遺恨",
+        titleEn: "A Bridge Too Far",
+        releaseYear: 1977,
+        type: "movie",
+        country: "英國 / 美國",
+        director: "李察·艾登堡祿 (Richard Attenborough)",
+        awards: "榮獲第31屆英國電影學院獎 (BAFTA) 最佳男配角、最佳配樂、最佳音效等4項大獎",
+        awardLevel: "MAJOR_WIN",
+        summary: "蒙哥馬利元帥策劃的市場花園行動。英美空降師深入荷蘭企圖奪取8座關鍵橋樑以直撲魯爾區，但英國第1空降師在最後的阿納姆大橋遭遇德軍SS裝甲師頑強反撲，血灑萊茵河畔。",
+        tags: ["市場花園", "阿納姆大橋", "二戰最大空降"]
+      },
+      {
+        id: "ww2-44",
+        histDate: "1944年09月 ~ 11月",
+        histSort: "1944-09-20",
+        theater: "西歐與西線戰場",
+        battle: "斯海爾德河戰役（打通安特衛普港泥沼戰）",
+        titleZh: "被遺忘的戰役",
+        titleEn: "The Forgotten Battle / De Slag om de Schelde",
+        releaseYear: 2020,
+        type: "movie",
+        country: "荷蘭 / 比利時",
+        director: "馬諦斯·范海尼傑 (Matthijs van Heijningen Jr.)",
+        awards: "榮獲荷蘭電影節金牛獎最佳攝影、最佳服裝、音效等多項大獎，爛番茄好評爆棚",
+        awardLevel: "MAJOR_WIN",
+        summary: "三線敘事交織：一位被洗腦加入德軍東線受傷的荷蘭青年、一位滑翔機迫降水網的英國飛行員、以及一位澤蘭島抵抗運動女性，在水壩決口後泥濘沼澤地中展開決定盟軍大補給動脈的血戰。",
+        tags: ["斯海爾德戰役", "荷蘭水網戰", "Netflix高分口碑"]
+      },
+      {
+        id: "ww2-45",
+        histDate: "1944年12月16日 ~ 1945年01月",
+        histSort: "1944-12-16",
+        theater: "西歐與西線戰場",
+        battle: "突出部之役（阿登反擊戰 / 守望萊茵行動）",
+        titleZh: "坦克大決戰",
+        titleEn: "Battle of the Bulge",
+        releaseYear: 1965,
+        type: "movie",
+        country: "美國",
+        director: "肯·安納金 (Ken Annakin)",
+        awards: "入圍第23屆金球獎最佳男配角與最佳原創配樂獎",
+        awardLevel: "NOMINEE",
+        summary: "以磅礴全景重現希特勒在比利時阿登森林調集最後精銳裝甲部隊發動的反撲。德軍虎王戰車（由M48裝甲車演繹）閃擊突破與美軍巴斯通鎮死守待援的鋼鐵對抗。",
+        tags: ["突出部戰役", "裝甲對決", "阿登雪原"]
+      },
+      {
+        id: "ww2-46",
+        histDate: "1945年02月 ~ 03月",
+        histSort: "1945-02-19a",
+        theater: "太平洋與亞洲戰場",
+        battle: "硫磺島戰役（美軍折鉢山插旗傳奇背後）",
+        titleZh: "硫磺島的英雄們",
+        titleEn: "Flags of Our Fathers",
+        releaseYear: 2006,
+        type: "movie",
+        country: "美國",
+        director: "克林·伊斯威特 (Clint Eastwood)",
+        awards: "入圍第79屆奧斯卡最佳音效剪輯、最佳混音2項提名",
+        awardLevel: "NOMINEE",
+        summary: "克林·伊斯威特太平洋硫磺島二部曲之一。解構折鉢山上升起星條旗歷史照片背後的政治造神運動，以及三位倖存士兵被召回國巡迴推銷戰爭公債時面對戰友犧牲的內心崩潰。",
+        tags: ["折鉢山插旗", "公債政治", "反英雄迷思"]
+      },
+      {
+        id: "ww2-47",
+        histDate: "1945年02月 ~ 03月",
+        histSort: "1945-02-19b",
+        theater: "太平洋與亞洲戰場",
+        battle: "硫磺島戰役（日軍地下坑道防守視角）",
+        titleZh: "來自硫磺島的信",
+        titleEn: "Letters from Iwo Jima",
+        releaseYear: 2006,
+        type: "movie",
+        country: "美國 / 日本",
+        director: "克林·伊斯威特 (Clint Eastwood)",
+        awards: "榮獲第79屆奧斯卡最佳音效剪輯獎（入圍最佳影片、導演）、金球獎最佳外語片獎",
+        awardLevel: "OSCAR_WIN",
+        summary: "克林·伊斯威特全日語執導巔峰。渡邊謙飾演受過美式教育的栗林忠道中將，以地下坑道游擊防禦拖垮美軍進攻，透過一封封埋在火山灰下的家書審視軍人對於故土與家人的牽掛。",
+        tags: ["栗林忠道", "金球獎最佳外語片", "日軍反思"]
+      },
+      {
+        id: "ww2-48",
+        histDate: "1945年03月07日",
+        histSort: "1945-03-07",
+        theater: "西歐與西線戰場",
+        battle: "雷瑪根鐵橋戰役（奪取萊茵河最後一座完整橋樑）",
+        titleZh: "雷瑪根鐵橋",
+        titleEn: "The Bridge at Remagen",
+        releaseYear: 1969,
+        type: "movie",
+        country: "美國",
+        director: "約翰·吉勒敏 (John Guillermin)",
+        awards: "於捷克斯洛伐克實地取景，深刻描摹萊茵河工兵爆破與搶渡的經典戰例",
+        awardLevel: "MAJOR_WIN",
+        summary: "美軍先頭步兵戰車部隊逼近萊茵河畔時意外發現德軍工兵尚未引爆魯登道夫鐵橋，美軍前鋒與德軍少校圍繞這座通往德國心臟唯一命脈大橋展開分秒必爭的生死爭奪。",
+        tags: ["雷瑪根鐵橋", "渡過萊茵河", "爆破工兵"]
+      },
+      {
+        id: "ww2-49",
+        histDate: "1945年04月07日",
+        histSort: "1945-04-07",
+        theater: "太平洋與亞洲戰場",
+        battle: "坊之岬海戰（戰艦大和號沖繩菊水特攻沈沒）",
+        titleZh: "男人們的大和",
+        titleEn: "Yamato / 男たちの大和",
+        releaseYear: 2005,
+        type: "movie",
+        country: "日本",
+        director: "佐藤純彌",
+        awards: "榮獲第30屆日本電影學院獎最佳導演入圍、最佳美術、最佳錄音獎",
+        awardLevel: "MAJOR_WIN",
+        summary: "日本東映以1:1建造大和號戰艦前甲板高射砲群拍攝。忠實再現大和號搭載單程油料開赴沖繩發動特攻，遭遇美軍數百架艦載機狂轟濫炸，三千餘名官兵戰死沈入海底的悲劇結局。",
+        tags: ["大和號", "天一號作戰", "巨艦大砲末日"]
+      },
+      {
+        id: "ww2-50",
+        histDate: "1945年04月",
+        histSort: "1945-04-12",
+        theater: "西歐與西線戰場",
+        battle: "深入德國本土推進作戰（美軍第2裝甲師雪曼戰車）",
+        titleZh: "怒火特攻隊",
+        titleEn: "Fury",
+        releaseYear: 2014,
+        type: "movie",
+        country: "美國",
+        director: "大衛·艾亞 (David Ayer)",
+        awards: "榮獲好萊塢電影獎年度剪輯獎、國家評論協會 (NBR) 年度十佳電影",
+        awardLevel: "MAJOR_WIN",
+        summary: "布萊德·彼特主演「戰爸」上士。影片罕見動用英國博文頓博物館世界唯一可開動的德軍虎式131號真品，真實描繪雪曼戰車面對虎式恐怖穿甲力時以四敵一的絕望血戰。",
+        tags: ["真品虎式戰車", "雪曼狂怒號", "裝甲排老兵"]
+      },
+      {
+        id: "ww2-51",
+        histDate: "1945年04月20日 ~ 04月30日",
+        histSort: "1945-04-20",
+        theater: "東線蘇德戰場",
+        battle: "柏林戰役與元首地堡崩潰最後十日",
+        titleZh: "帝國毀滅",
+        titleEn: "Downfall / Der Untergang",
+        releaseYear: 2004,
+        type: "movie",
+        country: "德國 / 奧地利 / 義大利",
+        director: "奧利佛·希斯貝格 (Oliver Hirschbiegel)",
+        awards: "入圍第77屆奧斯卡最佳外語片獎、榮獲德國電影獎金蘿拉獎、巴伐利亞電影獎",
+        awardLevel: "MAJOR_WIN",
+        summary: "布魯諾·岡茨極致演繹希特勒末路。依據元首秘書榮格回憶錄，完整呈現蘇聯紅軍重砲轟擊柏林時，地下掩體中高官們酗酒逃避、狂躁怒吼與第三帝國走向徹底毀滅的歷史全景。",
+        tags: ["元首地堡", "希特勒崩潰", "柏林淪陷"]
+      },
+      {
+        id: "ww2-52",
+        histDate: "1945年07月 ~ 08月",
+        histSort: "1945-07-16",
+        theater: "決策後方與大審判",
+        battle: "曼哈頓計畫、三位一體核試與終結二戰",
+        titleZh: "奧本海默",
+        titleEn: "Oppenheimer",
+        releaseYear: 2023,
+        type: "movie",
+        country: "美國 / 英國",
+        director: "克里斯多福·諾蘭 (Christopher Nolan)",
+        awards: "榮獲第96屆奧斯卡最佳影片、最佳導演、最佳男主角等7項大獎橫掃全球",
+        awardLevel: "OSCAR_WIN",
+        summary: "諾蘭傳記史詩神作。全景再現洛斯阿拉莫斯秘密小鎮主持研發原子彈的過程，並深刻審視核爆成功後奧本海默面對廣島長崎浩劫的道德內疚與戰後麥卡錫主義的政治審判。",
+        tags: ["奧斯卡最佳影片", "曼哈頓計畫", "三位一體核試驗"]
+      },
+      {
+        id: "ww2-53",
+        histDate: "1945年08月",
+        histSort: "1945-08-15",
+        theater: "決策後方與大審判",
+        battle: "日本宣布無條件投降與盟軍佔領東京",
+        titleZh: "日落真相 / 天皇",
+        titleEn: "Emperor",
+        releaseYear: 2012,
+        type: "movie",
+        country: "美國 / 日本",
+        director: "彼得·韋伯 (Peter Webber)",
+        awards: "入圍蒙特婁世界電影節，湯米·李·瓊斯精彩詮釋麥克阿瑟將軍",
+        awardLevel: "NOMINEE",
+        summary: "二戰甫結束盟軍進駐日本，費勒斯准將奉麥克阿瑟之命調查昭和天皇是否在偷襲珍珠港與戰時屠殺中承擔戰爭責任，決定是否將其送上絞刑台的歷史懸疑。",
+        tags: ["東京受降", "麥克阿瑟", "昭和天皇地位"]
+      },
+      {
+        id: "ww2-54",
+        histDate: "1945年11月起",
+        histSort: "1945-11-20",
+        theater: "決策後方與大審判",
+        battle: "紐倫堡國際軍事法庭大審判（納粹反人類罪清算）",
+        titleZh: "紐倫堡大審判",
+        titleEn: "Judgment at Nuremberg",
+        releaseYear: 1961,
+        type: "movie",
+        country: "美國",
+        director: "史丹利·克藍瑪 (Stanley Kramer)",
+        awards: "榮獲第34屆奧斯卡最佳男主角、最佳改編劇本2項大獎，入圍最佳影片等11項提名",
+        awardLevel: "OSCAR_WIN",
+        summary: "影史最偉大法庭對決之一。審理四名在納粹體系下依法簽署絕育法與判處異見人士死刑的德國法官，深刻詰問：當國家法律本身變成罪惡時，公職人員服從命令是否能作為免罪藉口？",
+        tags: ["紐倫堡審判", "反人類罪", "法庭片巔峰"]
+      },
+      {
+        id: "ww2-55",
+        histDate: "1941年 ~ 1945年（海戰專題）",
+        histSort: "1942-01",
+        theater: "大西洋海戰與潛艇",
+        battle: "大西洋水下深海幽閉獵殺生活實錄",
+        titleZh: "從海底出擊（潛艇風暴）",
+        titleEn: "Das Boot / The Boat",
+        releaseYear: 1981,
+        type: "movie",
+        country: "西德",
+        director: "沃夫岡·彼得森 (Wolfgang Petersen)",
+        awards: "入圍第55屆奧斯卡金像獎最佳導演、最佳改編劇本、最佳攝影等6項大獎",
+        awardLevel: "OSCAR_WIN",
+        summary: "影史最不可逾越的潛艇電影。鏡頭緊貼U-96潛艇官兵在潮濕狹隘艙室內的體味、柴油味與恐懼，當深水炸彈在周圍引爆、水壓擠壓鋼板發出慘叫時，將深海幽閉窒息感推向極致。",
+        tags: ["U-96潛艇", "深海幽閉", "影史潛艇第一片"]
+      }
+    ];
+
+    // LocalStorage Engine
+    const STORAGE_KEY = "WWII_PARCHMENT_WATCHLIST_V3";
+    let userState = {
+      watched: [],
+      wishlist: [],
+      favorites: []
+    };
+
+    function loadUserState() {
+      try {
+        const stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) userState = JSON.parse(stored);
+      } catch (e) {
+        console.error("Local storage error", e);
+      }
+    }
+
+    function saveUserState() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(userState));
+        updateStats();
+      } catch (e) {
+        console.error("Save error", e);
+      }
+    }
+
+    function toggleStatus(id, type) {
+      if (type === 'watched') {
+        if (userState.watched.includes(id)) {
+          userState.watched = userState.watched.filter(i => i !== id);
+          showToast("已從【已看紀錄】移除", "fa-rotate-left");
+        } else {
+          userState.watched.push(id);
+          userState.wishlist = userState.wishlist.filter(i => i !== id);
+          showToast("已蓋印認證：【已閱／看過】", "fa-check");
+        }
+      } else if (type === 'wishlist') {
+        if (userState.wishlist.includes(id)) {
+          userState.wishlist = userState.wishlist.filter(i => i !== id);
+          showToast("已從【想看清單】移出", "fa-bookmark");
+        } else {
+          userState.wishlist.push(id);
+          showToast("已收納至【想看作戰名冊】", "fa-bookmark");
+        }
+      } else if (type === 'favorite') {
+        if (userState.favorites.includes(id)) {
+          userState.favorites = userState.favorites.filter(i => i !== id);
+          showToast("已取消【最高典藏】", "fa-heart-crack");
+        } else {
+          userState.favorites.push(id);
+          showToast("已列入【二戰軍史最高典藏】", "fa-heart");
+        }
+      }
+      saveUserState();
+      renderAllViews();
+    }
+
+    function updateStats() {
+      const total = mediaDatabase.length;
+      const watched = userState.watched.length;
+      const wishlist = userState.wishlist.length;
+      const fav = userState.favorites.length;
+      const percent = Math.round((watched / total) * 100) || 0;
+
+      document.getElementById('totalMediaCount').innerText = total;
+      document.getElementById('watchedCount').innerText = watched;
+      document.getElementById('wishlistCount').innerText = wishlist;
+      document.getElementById('favCount').innerText = fav;
+      document.getElementById('trackerPercent').innerText = percent + "%";
+      document.getElementById('trackerProgressBar').style.width = percent + "%";
+    }
+
+    function showToast(msg, icon = "fa-check") {
+      const toast = document.getElementById('toast');
+      document.getElementById('toastMsg').innerText = msg;
+      const toastIcon = document.getElementById('toastIcon');
+      toastIcon.className = `fa-solid ${icon} text-vintage-gold`;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 2000);
+    }
+
+    // Filters and State
+    let currentSearch = "";
+    let currentTheater = "ALL";
+    let currentCountry = "ALL";
+    let currentAward = "ALL";
+    let currentType = "ALL";
+    let currentStatus = "ALL";
+    let currentView = "timeline"; // timeline | theaters | table
+
+    function getFilteredData() {
+      return mediaDatabase.filter(item => {
+        // Search text matching
+        const query = currentSearch.toLowerCase();
+        const searchTarget = (
+          item.titleZh + " " +
+          item.titleEn + " " +
+          item.battle + " " +
+          item.director + " " +
+          item.country + " " +
+          item.awards + " " +
+          item.histDate + " " +
+          item.releaseYear + " " +
+          item.tags.join(" ")
+        ).toLowerCase();
+        const matchesSearch = !currentSearch || searchTarget.includes(query);
+
+        // Theater
+        const matchesTheater = currentTheater === "ALL" || item.theater === currentTheater;
+
+        // Country
+        let matchesCountry = true;
+        if (currentCountry === "德國") {
+          matchesCountry = item.country.includes("德國") || item.country.includes("西德");
+        } else if (currentCountry === "其他國家") {
+          matchesCountry = !item.country.includes("美國") && 
+                           !item.country.includes("英國") && 
+                           !item.country.includes("德國") && 
+                           !item.country.includes("日本") && 
+                           !item.country.includes("俄羅斯") && 
+                           !item.country.includes("蘇聯");
+        } else if (currentCountry !== "ALL") {
+          matchesCountry = item.country.includes(currentCountry);
+        }
+
+        // Awards Level
+        let matchesAward = true;
+        if (currentAward === "OSCAR_WIN") matchesAward = item.awardLevel === "OSCAR_WIN";
+        else if (currentAward === "MAJOR_WIN") matchesAward = item.awardLevel === "MAJOR_WIN" || item.awardLevel === "OSCAR_WIN";
+        else if (currentAward === "NOMINEE") matchesAward = item.awardLevel === "NOMINEE";
+
+        // Type
+        const matchesType = currentType === "ALL" || item.type === currentType;
+
+        // Status
+        let matchesStatus = true;
+        if (currentStatus === "watched") matchesStatus = userState.watched.includes(item.id);
+        else if (currentStatus === "wishlist") matchesStatus = userState.wishlist.includes(item.id);
+        else if (currentStatus === "favorite") matchesStatus = userState.favorites.includes(item.id);
+
+        return matchesSearch && matchesTheater && matchesCountry && matchesAward && matchesType && matchesStatus;
+      });
+    }
+
+    // Helper: Build Parchment Media Card
+    function createMediaCard(item) {
+      const isWatched = userState.watched.includes(item.id);
+      const isWish = userState.wishlist.includes(item.id);
+      const isFav = userState.favorites.includes(item.id);
+
+      const typeBadge = item.type === 'series' 
+        ? `<span class="bg-amber-900/10 text-amber-900 border border-amber-800/30 px-2 py-0.5 rounded text-[11px] font-mono font-bold tracking-tight">📺 電視迷你影集</span>`
+        : `<span class="bg-coffee-600/10 text-coffee-800 border border-coffee-600/30 px-2 py-0.5 rounded text-[11px] font-mono font-bold tracking-tight">🎬 院線長片</span>`;
+
+      // Awards badge color
+      let awardBadge = "";
+      if (item.awardLevel === 'OSCAR_WIN') {
+        awardBadge = `<span class="inline-flex items-center gap-1 bg-yellow-100 text-yellow-900 border border-yellow-600/40 px-2 py-0.5 rounded text-[11px] font-mono font-bold"><i class="fa-solid fa-trophy text-vintage-gold"></i> 奧斯卡大獎</span>`;
+      } else if (item.awardLevel === 'MAJOR_WIN') {
+        awardBadge = `<span class="inline-flex items-center gap-1 bg-vintage-olive/10 text-vintage-olive border border-vintage-olive/30 px-2 py-0.5 rounded text-[11px] font-mono font-bold"><i class="fa-solid fa-award"></i> 國際大獎肯定</span>`;
+      } else {
+        awardBadge = `<span class="inline-flex items-center gap-1 bg-parchment-200 text-coffee-700 border border-coffee-400 px-2 py-0.5 rounded text-[11px] font-mono"><i class="fa-solid fa-certificate"></i> 入圍/經典</span>`;
+      }
+
+      const searchGoogleUrl = `https://www.google.com/search?q=${encodeURIComponent(item.titleZh + " " + item.titleEn + " 電影 導演 " + item.director)}`;
+      const searchYoutubeUrl = `https://www.youtube.com/results?search_query=${encodeURIComponent(item.titleZh + " " + item.titleEn + " 預告片 trailer")}`;
+
+      return `
+        <div class="relative bg-parchment-100 paper-texture border-2 ${isWatched ? 'border-vintage-olive bg-parchment-50/80 shadow-none' : 'border-coffee-600 shadow-sm'} rounded-xl p-4 sm:p-5 transition hover:shadow-md hover:border-coffee-800 group">
+          
+          <!-- Card Header / Meta Line -->
+          <div class="flex flex-wrap items-center justify-between gap-2 pb-2.5 mb-2.5 border-b border-coffee-300">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="inline-flex items-center gap-1 text-xs font-mono font-bold text-parchment-100 bg-coffee-800 px-2.5 py-0.5 rounded shadow-sm">
+                <i class="fa-solid fa-clock-rotate-left text-[11px] text-vintage-gold"></i>
+                ${item.histDate}
+              </span>
+              <span class="text-xs font-mono font-bold text-coffee-950 bg-parchment-200 border border-coffee-400 px-2.5 py-0.5 rounded">
+                ${item.battle}
+              </span>
+            </div>
+
+            <div class="flex items-center gap-2">
+              ${typeBadge}
+              ${awardBadge}
+            </div>
+          </div>
+
+          <!-- Main Title & Director Row -->
+          <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-3 mb-2.5">
+            <div>
+              <div class="flex items-baseline gap-2">
+                <h3 class="text-xl font-bold font-serif text-coffee-950 group-hover:text-coffee-700 transition">
+                  ${item.titleZh}
+                </h3>
+                <span class="text-xs font-mono text-coffee-600">(${item.releaseYear})</span>
+              </div>
+              <p class="text-xs font-mono text-coffee-600 italic mt-0.5">${item.titleEn}</p>
+            </div>
+
+            <!-- Action Status Buttons -->
+            <div class="flex items-center gap-1.5 self-start shrink-0">
+              <button 
+                onclick="toggleStatus('${item.id}', 'watched')" 
+                title="${isWatched ? '取消標記' : '標記為已看'}" 
+                class="px-2.5 py-1 text-xs font-mono rounded border transition flex items-center gap-1 ${isWatched ? 'bg-vintage-olive text-parchment-100 border-vintage-olive font-bold' : 'bg-parchment-50 text-coffee-800 border-coffee-400 hover:bg-parchment-200'}">
+                <i class="fa-solid ${isWatched ? 'fa-check-double' : 'fa-check'}"></i>
+                <span>${isWatched ? '已閱' : '已看'}</span>
+              </button>
+
+              <button 
+                onclick="toggleStatus('${item.id}', 'wishlist')" 
+                title="${isWish ? '從想看名單移除' : '加入想看清單'}" 
+                class="px-2 py-1 text-xs font-mono rounded border transition ${isWish ? 'bg-vintage-gold text-coffee-950 border-vintage-gold font-bold shadow-sm' : 'bg-parchment-50 text-coffee-700 border-coffee-400 hover:text-vintage-gold'}">
+                <i class="fa-solid fa-bookmark"></i>
+              </button>
+
+              <button 
+                onclick="toggleStatus('${item.id}', 'favorite')" 
+                title="${isFav ? '取消典藏' : '收藏至最愛'}" 
+                class="px-2 py-1 text-xs rounded border transition ${isFav ? 'bg-vintage-accentRed text-parchment-100 border-vintage-accentRed font-bold shadow-sm' : 'bg-parchment-50 text-coffee-700 border-coffee-400 hover:text-vintage-accentRed'}">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Production Metadata Block: Country & Director -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-mono bg-parchment-200/70 p-2.5 rounded-md border border-coffee-300 text-coffee-800 mb-3">
+            <div>
+              <span class="text-coffee-600"><i class="fa-solid fa-flag-checkered mr-1"></i>發行國家：</span>
+              <b class="text-coffee-950">${item.country}</b>
+            </div>
+            <div>
+              <span class="text-coffee-600"><i class="fa-solid fa-clapperboard mr-1"></i>執導導演：</span>
+              <b class="text-coffee-950">${item.director}</b>
+            </div>
+            <div class="sm:col-span-2 text-xs border-t border-coffee-300/60 pt-1 mt-0.5">
+              <span class="text-coffee-600"><i class="fa-solid fa-medal mr-1 text-vintage-gold"></i>榮譽紀錄：</span>
+              <span class="text-coffee-900">${item.awards}</span>
+            </div>
+          </div>
+
+          <!-- Synopsis -->
+          <p class="text-xs sm:text-sm text-coffee-900 leading-relaxed mb-3">
+            ${item.summary}
+          </p>
+
+          <!-- Tags & Outbound Search -->
+          <div class="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-coffee-300/80">
+            <div class="flex flex-wrap items-center gap-1.5">
+              <span class="text-[11px] font-mono text-coffee-700 bg-parchment-200 px-2 py-0.5 rounded border border-coffee-300">
+                <i class="fa-solid fa-earth-americas mr-1 text-coffee-600"></i>${item.theater}
+              </span>
+              ${item.tags.map(tag => `<span class="text-[10px] font-mono text-coffee-600 bg-parchment-200/50 px-1.5 py-0.5 rounded">#${tag}</span>`).join('')}
+            </div>
+
+            <!-- External Research Portals -->
+            <div class="flex items-center gap-3 text-xs font-mono">
+              <a href="${searchGoogleUrl}" target="_blank" rel="noopener noreferrer" class="text-coffee-700 hover:text-coffee-950 hover:underline flex items-center gap-1">
+                <i class="fa-brands fa-google text-coffee-600"></i> 軍史詳情
+              </a>
+              <span class="text-coffee-400">•</span>
+              <a href="${searchYoutubeUrl}" target="_blank" rel="noopener noreferrer" class="text-coffee-700 hover:text-vintage-accentRed hover:underline flex items-center gap-1">
+                <i class="fa-brands fa-youtube text-vintage-accentRed"></i> 預告片段
+              </a>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    // Render Timeline View
+    function renderTimeline(data) {
+      const container = document.getElementById('timelineView');
+      if (data.length === 0) {
+        container.innerHTML = "";
+        return;
+      }
+
+      const sorted = [...data].sort((a, b) => a.histSort.localeCompare(b.histSort));
+
+      container.innerHTML = sorted.map((item, index) => {
+        return `
+          <div class="relative">
+            <!-- Timeline Stamp Dot -->
+            <div class="absolute -left-[31px] sm:-left-[47px] top-4 w-5 h-5 rounded-full bg-parchment-100 border-2 border-coffee-800 flex items-center justify-center shadow-sm">
+              <div class="w-2 h-2 rounded-full bg-vintage-gold"></div>
+            </div>
+            ${createMediaCard(item)}
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Render Theaters Matrix
+    function renderTheaters(data) {
+      const container = document.getElementById('theatersView');
+      if (data.length === 0) {
+        container.innerHTML = "";
+        return;
+      }
+
+      const theaterCategories = [
+        { name: "西歐與西線戰場", icon: "fa-shield-halved", desc: "自敦克爾克大撤退、西線淪陷至諾曼第反攻與市場花園大空降" },
+        { name: "東線蘇德戰場", icon: "fa-snowflake", desc: "巴巴羅薩侵略、史達林格勒巷戰絞肉機、列寧格勒圍困與柏林地堡覆滅" },
+        { name: "太平洋與亞洲戰場", icon: "fa-compass", desc: "淞滬抗戰、珍珠港、中途島航艦對決、瓜島熱帶叢林至硫磺島血戰" },
+        { name: "北非與地中海", icon: "fa-sun", desc: "托布魯克要塞、隆美爾裝甲師奔襲與阿拉曼沙漠決戰" },
+        { name: "大西洋海戰與潛艇", icon: "fa-water", desc: "U型潛艇狼群戰術、驅逐艦護航大西洋航線與深海幽閉對抗" },
+        { name: "戰略空戰與航空隊", icon: "fa-plane", desc: "不列顛空戰制空權、美軍第八航空隊白晝深入德國本土戰略轟炸" },
+        { name: "戰俘營與情報密戰", icon: "fa-user-secret", desc: "肉餡行動戰略欺敵、泰緬死亡鐵路、爪哇戰俘營與超人意志求生" },
+        { name: "決策後方與大審判", icon: "fa-scale-balanced", desc: "慕尼黑協議綏靖、曼哈頓計畫核爆問世、日本受降與紐倫堡國際大審判" },
+      ];
+
+      container.innerHTML = theaterCategories.map(cat => {
+        const items = data.filter(d => d.theater === cat.name);
+        if (items.length === 0) return "";
+
+        return `
+          <section class="space-y-4">
+            <div class="border-b-2 border-coffee-600 pb-2 flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+              <div class="flex items-center gap-2">
+                <span class="w-7 h-7 rounded bg-coffee-800 text-parchment-100 flex items-center justify-center text-xs">
+                  <i class="fa-solid ${cat.icon}"></i>
+                </span>
+                <h2 class="text-xl font-bold font-serif text-coffee-950">${cat.name}</h2>
+                <span class="text-xs font-mono text-coffee-600 ml-1">(${items.length} 部檔案)</span>
+              </div>
+              <p class="text-xs font-mono text-coffee-600">${cat.desc}</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              ${items.map(item => createMediaCard(item)).join('')}
+            </div>
+          </section>
+        `;
+      }).join('');
+    }
+
+    // Render Military Dossier Table
+    function renderTable(data) {
+      const tbody = document.getElementById('tableBody');
+      if (data.length === 0) {
+        tbody.innerHTML = "";
+        return;
+      }
+
+      const sorted = [...data].sort((a, b) => a.histSort.localeCompare(b.histSort));
+
+      tbody.innerHTML = sorted.map(item => {
+        const isWatched = userState.watched.includes(item.id);
+        const searchGoogleUrl = `https://www.google.com/search?q=${encodeURIComponent(item.titleZh + " " + item.titleEn + " 電影")}`;
+
+        return `
+          <tr class="hover:bg-parchment-200/60 transition border-b border-coffee-200">
+            <td class="py-3 px-3 text-center">
+              <button onclick="toggleStatus('${item.id}', 'watched')" title="切換看過狀態" class="text-sm ${isWatched ? 'text-vintage-olive font-bold' : 'text-coffee-300 hover:text-coffee-600'}">
+                <i class="fa-solid ${isWatched ? 'fa-square-check' : 'fa-square'}"></i>
+              </button>
+            </td>
+            <td class="py-3 px-3 font-mono font-bold text-coffee-950 whitespace-nowrap text-xs">${item.histDate}</td>
+            <td class="py-3 px-3 font-semibold text-coffee-900">${item.battle}</td>
+            <td class="py-3 px-3">
+              <div class="font-bold text-coffee-950">${item.titleZh}</div>
+              <div class="text-[11px] font-mono text-coffee-600 italic">${item.titleEn}</div>
+            </td>
+            <td class="py-3 px-3 font-mono text-xs whitespace-nowrap"><span class="px-2 py-0.5 bg-parchment-200 rounded border border-coffee-300">${item.country}</span></td>
+            <td class="py-3 px-3 font-mono text-xs whitespace-nowrap font-medium text-coffee-900">${item.director}</td>
+            <td class="py-3 px-3 font-mono text-xs whitespace-nowrap text-coffee-700">
+              ${item.releaseYear} (${item.type === 'series' ? '影集' : '長片'})
+            </td>
+            <td class="py-3 px-3 text-xs text-coffee-800 leading-snug">
+              ${item.awards}
+            </td>
+            <td class="py-3 px-3 text-center whitespace-nowrap">
+              <a href="${searchGoogleUrl}" target="_blank" class="text-coffee-700 hover:text-coffee-950 px-1 font-mono text-xs">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    // Master Render Controller
+    function renderAllViews() {
+      const data = getFilteredData();
+      document.getElementById('filteredCount').innerText = data.length;
+
+      const emptyNotice = document.getElementById('emptyNotice');
+      if (data.length === 0) {
+        emptyNotice.classList.remove('hidden');
+      } else {
+        emptyNotice.classList.add('hidden');
+      }
+
+      if (currentView === "timeline") {
+        renderTimeline(data);
+      } else if (currentView === "theaters") {
+        renderTheaters(data);
+      } else if (currentView === "table") {
+        renderTable(data);
+      }
+    }
+
+    // View Switching
+    function setupViewSwitchers() {
+      const btnTimeline = document.getElementById('viewTimelineBtn');
+      const btnTheaters = document.getElementById('viewTheatersBtn');
+      const btnTable = document.getElementById('viewTableBtn');
+
+      const elTimeline = document.getElementById('timelineView');
+      const elTheaters = document.getElementById('theatersView');
+      const elTable = document.getElementById('tableView');
+
+      function resetTabs() {
+        [btnTimeline, btnTheaters, btnTable].forEach(btn => {
+          btn.classList.remove('bg-coffee-800', 'text-parchment-50', 'shadow-sm');
+          btn.classList.add('text-coffee-800');
+        });
+      }
+
+      btnTimeline.addEventListener('click', () => {
+        currentView = "timeline";
+        resetTabs();
+        btnTimeline.classList.add('bg-coffee-800', 'text-parchment-50', 'shadow-sm');
+        elTimeline.classList.remove('hidden');
+        elTheaters.classList.add('hidden');
+        elTable.classList.add('hidden');
+        renderAllViews();
+      });
+
+      btnTheaters.addEventListener('click', () => {
+        currentView = "theaters";
+        resetTabs();
+        btnTheaters.classList.add('bg-coffee-800', 'text-parchment-50', 'shadow-sm');
+        elTimeline.classList.add('hidden');
+        elTheaters.classList.remove('hidden');
+        elTable.classList.add('hidden');
+        renderAllViews();
+      });
+
+      btnTable.addEventListener('click', () => {
+        currentView = "table";
+        resetTabs();
+        btnTable.classList.add('bg-coffee-800', 'text-parchment-50', 'shadow-sm');
+        elTimeline.classList.add('hidden');
+        elTheaters.classList.add('hidden');
+        elTable.classList.remove('hidden');
+        renderAllViews();
+      });
+    }
+
+    // Filter Listeners Setup
+    function setupFilterListeners() {
+      const searchInput = document.getElementById('searchInput');
+      const clearSearch = document.getElementById('clearSearch');
+      const theaterFilter = document.getElementById('theaterFilter');
+      const countryFilter = document.getElementById('countryFilter');
+      const awardFilter = document.getElementById('awardFilter');
+      const typeFilter = document.getElementById('typeFilter');
+
+      searchInput.addEventListener('input', (e) => {
+        currentSearch = e.target.value.trim();
+        if (currentSearch) clearSearch.classList.remove('hidden');
+        else clearSearch.classList.add('hidden');
+        renderAllViews();
+      });
+
+      clearSearch.addEventListener('click', () => {
+        searchInput.value = "";
+        currentSearch = "";
+        clearSearch.classList.add('hidden');
+        renderAllViews();
+      });
+
+      theaterFilter.addEventListener('change', (e) => {
+        currentTheater = e.target.value;
+        renderAllViews();
+      });
+
+      countryFilter.addEventListener('change', (e) => {
+        currentCountry = e.target.value;
+        renderAllViews();
+      });
+
+      awardFilter.addEventListener('change', (e) => {
+        currentAward = e.target.value;
+        renderAllViews();
+      });
+
+      typeFilter.addEventListener('change', (e) => {
+        currentType = e.target.value;
+        renderAllViews();
+      });
+
+      // Status quick buttons
+      document.querySelectorAll('.status-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+          document.querySelectorAll('.status-tab').forEach(t => {
+            t.classList.remove('bg-coffee-700', 'text-parchment-100', 'font-bold');
+            t.classList.add('text-coffee-800');
+          });
+          tab.classList.add('bg-coffee-700', 'text-parchment-100', 'font-bold');
+          tab.classList.remove('text-coffee-800');
+          currentStatus = tab.getAttribute('data-status');
+          renderAllViews();
+        });
+      });
+
+      // Export / Backup Checklist
+      document.getElementById('exportBtn').addEventListener('click', () => {
+        const watchedTitles = mediaDatabase.filter(m => userState.watched.includes(m.id)).map(m => `[已看] ${m.histDate} 《${m.titleZh}》（${m.country} / 導演：${m.director} / ${m.releaseYear}）- 獲獎：${m.awards}`);
+        const wishTitles = mediaDatabase.filter(m => userState.wishlist.includes(m.id)).map(m => `[想看] ${m.histDate} 《${m.titleZh}》（${m.country} / 導演：${m.director} / ${m.releaseYear}）`);
+
+        const summary = `【二戰史實編年史電影檔案庫・觀影備忘錄】\n已閱戰況：${userState.watched.length} / ${mediaDatabase.length} 部\n\n=== 已閱認證清單 (${watchedTitles.length}) ===\n${watchedTitles.join('\n') || '尚未蓋印'}\n\n=== 擬定作戰想看清單 (${wishTitles.length}) ===\n${wishTitles.join('\n') || '暫無'}`;
+
+        const tempInput = document.createElement('textarea');
+        tempInput.value = summary;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand('copy');
+        document.body.removeChild(tempInput);
+
+        showToast("觀影備忘清單已複製至剪貼簿！", "fa-clipboard-check");
+      });
+
+      // Reset progress
+      document.getElementById('resetProgressBtn').addEventListener('click', () => {
+        if (confirm("確認要清空所有已閱標記與想看進度嗎？")) {
+          userState = { watched: [], wishlist: [], favorites: [] };
+          saveUserState();
+          renderAllViews();
+          showToast("觀影進度已重設", "fa-rotate-left");
+        }
+      });
+    }
+
+    // Initialize App
+    window.addEventListener('DOMContentLoaded', () => {
+      loadUserState();
+      updateStats();
+      setupViewSwitchers();
+      setupFilterListeners();
+      renderAllViews();
+    });
+  </script>
+</body>
+</html>
